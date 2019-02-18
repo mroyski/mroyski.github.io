@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 html {    
@@ -59,7 +58,6 @@ h3 {
 
 #mypic {
     border-radius: 50%;
-    /* filter: grayscale(100%); */
 }
 
 .mypiceffect {
