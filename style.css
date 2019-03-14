@@ -71,6 +71,22 @@ h3 {
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  #mypic{
+    width: 200px;
+  }
+
+  .mypiceffect{
+    width: 150px;
+  }
+
+  #aboutMe article {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
 #mypic {
     border-radius: 50%;
 }
@@ -174,11 +190,17 @@ h3 {
     list-style: none;
     margin: 0 auto;
     border-radius: 1rem;
-    width: 50%;
+    width: 473px;
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    font-size:1.5rem;
+  }
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.795);
     position: fixed;
     top: 0;
     left: 0;
@@ -232,7 +254,7 @@ nav a {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .navbar {
     display: flex;
     padding-bottom: 0;
@@ -269,7 +291,6 @@ nav a {
   }
 }
 
-
 footer {
   background-color: black;
   color: whitesmoke;
@@ -279,8 +300,6 @@ footer {
     flex-flow: row;
     justify-content: center;
 }
-
-
 
 /* SLIDESHOW */
 .mySlides {display: none}
@@ -380,7 +399,6 @@ img {vertical-align: middle;}
 }
 
 /* ICON GROW */
-
   .hvr-grow {
     display: inline-block;
     vertical-align: middle;
