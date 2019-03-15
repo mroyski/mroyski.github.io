@@ -26,6 +26,22 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// COLLAPSE
+var coll = document.getElementsByClassName("colla");
+var x;
+
+for (x = 0; x < coll.length; x++) {
+  coll[x].addEventListener("click", function() {
+    this.classList.toggle("activate");
+    var stuff = this.nextElementSibling;
+    if (stuff.style.display === "block") {
+      stuff.style.display = "none";
+    } else {
+      stuff.style.display = "block";
+    }
+  });
+}
+
 // NAVBAR
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
