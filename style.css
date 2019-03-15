@@ -31,7 +31,6 @@ main {
 @media screen and (max-width: 768px) {
   .bottomHalf{
     background-position-x: -300px;
-    /* background-position-y: 200px; */
   }
 }
 
@@ -40,6 +39,7 @@ header {
 }
 
 h1 {
+    font-family: 'Parisienne', cursive;
     line-height: 1.5em;
     text-align: center;
     font-size: 8rem;
@@ -69,7 +69,7 @@ h3 {
   h1 {
     font-size: 5rem;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0 0 0;
     line-height: 1em;
   }
   h2 {
@@ -523,6 +523,12 @@ img {vertical-align: middle;}
   background-color: rgba(0,0,0,0.6);
 }
 
+@media only screen and (max-width: 515px) {
+  .modal {
+    padding: 0;
+  }
+}
+
 /* Modal Content */
 .modal-content {
   border-radius: 10px;
@@ -533,12 +539,18 @@ img {vertical-align: middle;}
   width: 80%;
 }
 
+@media only screen and (max-width: 515px) {
+  .modal-content {
+    padding: 1rem;
+  }
+}
+
 .modal-content p {
   line-height: 2rem;
 }
 
 .close {
-  padding: 1rem;
+  padding-right: 1rem;
   color: white;
   float: right;
   font-size: 28px;
@@ -560,4 +572,10 @@ img {vertical-align: middle;}
 
 #myBtn:hover {
   color: white;
+  cursor: pointer;
+}
+
+#techStack {
+  font-size: 2rem;
+  padding-bottom: 2rem;
 }
