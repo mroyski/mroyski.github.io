@@ -1,19 +1,19 @@
 * {
-    line-height: 1.618em;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  line-height: 1.618em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {    
-    scroll-behavior: smooth;
-    font-size: 16px;
-    font-family: 'Sarabun', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: 'Sarabun', sans-serif;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .topHalf {
@@ -35,34 +35,34 @@ main {
 }
 
 header {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 h1 {
-    font-family: 'Parisienne', cursive;
-    line-height: 1.5em;
-    text-align: center;
-    font-size: 8rem;
-    font-weight: bold;
-    padding: 5rem 0 0 0;
-    color: white;
-    text-shadow: 2px 2px 3px black;
+  font-family: 'Parisienne', cursive;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: bold;
+  padding: 5rem 0 0 0;
+  color: white;
+  text-shadow: 2px 2px 3px black;
 }
 
 h2 {
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    text-align: center;
-    padding-top: 3rem;
-    font-size: 5rem;
-    font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 h3 {
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    font-size: 3rem;
-    text-align: center;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-size: 3rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -83,16 +83,16 @@ h3 {
 }
 
 #aboutMe {
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    background-size: cover;
-    text-align: center;
-    height: auto;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  background-size: cover;
+  text-align: center;
+  height: auto;
 }
 
 #aboutMe article {
-    padding: 3rem 10rem;
-    font-size: 1.5rem;
+  padding: 3rem 10rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -112,25 +112,24 @@ h3 {
 }
 
 #mypic {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .mypiceffect {
-    margin: 0 auto;
-    position: relative;
-    width:40%;
+  margin: 0 auto;
+  position: relative;
   }
   
-  .overlay {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
   }
   
   .mypiceffect:hover .overlay {
@@ -526,6 +525,7 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 515px) {
   .modal {
+    margin-top: 10vh;
     padding: 0;
   }
 }
