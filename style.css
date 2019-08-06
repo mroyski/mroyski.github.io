@@ -78,12 +78,13 @@ h1 {
 }
 
 #projects {
-  background-color: white;
+  background-color: #ff4f4f;
 }
 
 #projects h1 {
   padding: 1em 0;
-  color: #ff4f4f;
+  color: white;
+  font-size: 2em;
 }
 
 * {
