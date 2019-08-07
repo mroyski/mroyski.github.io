@@ -16,6 +16,14 @@ h1 {
   padding: 0.4em;
 }
 
+#head h1 {
+  font-family: 'Caveat', cursive;
+  line-height: 1em;
+  font-size: 4em;
+  padding: 0;
+  margin: 0.3em 0 0 0;
+}
+
 #head {
   display: flex;
   flex-direction: column;
@@ -40,7 +48,8 @@ h1 {
 }
 
 #head a:hover {
-  color: #fa0000;
+  /* color: #fa0000; */
+  color: rgb(160, 160, 160);
   margin-top: 2rem;
 }
 
