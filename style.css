@@ -12,7 +12,8 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
+  padding: 0.4em;
 }
 
 #head {
@@ -33,7 +34,7 @@ h1 {
 
 #head a {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.5em;
   color: white;
   transition: 0.5s;
 }
@@ -77,17 +78,22 @@ h1 {
   margin: auto;
 }
 
-#projects {
-  background-color: #ff4f4f;
-  margin-bottom: 5em;
-}
-
-#projects h1 {
+#projects h1,
+#skills h1 {
   padding: 1em 0;
   color: white;
   font-size: 2em;
 }
 
+#skillIcons {
+  color: white;
+  font-size: 2em;
+}
+#skillsList {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -96,6 +102,12 @@ h1 {
 }
 img {
   vertical-align: middle;
+}
+
+#projAndSkills {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4em;
 }
 
 @media screen and (max-width: 1050px) {
@@ -239,5 +251,10 @@ img {
   }
   #me {
     width: 50%;
+  }
+
+  #projAndSkills {
+    flex-direction: column;
+    margin-bottom: 4em;
   }
 }

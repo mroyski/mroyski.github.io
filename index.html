@@ -42,46 +42,73 @@
       </p>
       <img id="me" src="images/Royski.jpg" />
     </div>
-    <div id="projects">
-      <h1>Projects</h1>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <a href="http://github.com/mroyski/minimize" target="_blank"
-            ><img src="images/Minimize01.png" style="width:100%"
-          /></a>
-          <div class="text">
-            MINIMIZE<br />Learn the minimalist lifestlye and post your actions
+    <div id="projAndSkills">
+      <div id="projects">
+        <h1>Projects</h1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <a href="http://github.com/mroyski/minimize" target="_blank"
+              ><img src="images/Minimize01.png" style="width:100%"
+            /></a>
+            <div class="text">
+              MINIMIZE<br />Learn the minimalist lifestlye and post your actions
+            </div>
           </div>
-        </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <a href="https://github.com/mroyski/BeerdsBeerReview" target="_blank"
-            ><img src="images/Beerds01.png" style="width:100%"
-          /></a>
-          <div class="text">
-            BEERDS BEER REVIEW<br />Research beers and leave reviews
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <a
+              href="https://github.com/mroyski/BeerdsBeerReview"
+              target="_blank"
+              ><img src="images/Beerds01.png" style="width:100%"
+            /></a>
+            <div class="text">
+              BEERDS BEER REVIEW<br />Research beers and leave reviews
+            </div>
           </div>
-        </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <a href="https://github.com/ZachDickens/memegenerator" target="_blank"
-            ><img src="images/Meme02.png" style="width:100%"
-          /></a>
-          <div class="text">MEME GENERATOR<br />Create your own memes</div>
-        </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <a
+              href="https://github.com/ZachDickens/memegenerator"
+              target="_blank"
+              ><img src="images/Meme02.png" style="width:100%"
+            /></a>
+            <div class="text">MEME GENERATOR<br />Create your own memes</div>
+          </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
-      <br />
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div id="skills">
+        <h1>Skills</h1>
+        <div id="skillIcons">
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-react"></i>
+          <i class="fas fa-database"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-git"></i>
+        </div>
+        <ul id="skillsList">
+          <li>C#</li>
+          <li>ASP.Net Core</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>SQL</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Source Control</li>
+        </ul>
       </div>
     </div>
   </body>
