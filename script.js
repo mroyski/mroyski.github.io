@@ -1,30 +1,70 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener(
+  'DOMContentLoaded',
+  () => {
+    const workHistoryCards = Array.from(
+      document.querySelectorAll('.work-history-card')
+    );
+    workHistoryCards
+      .slice(2, workHistoryCards.length)
+      .forEach((c) => (c.hidden = true));
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName('mySlides');
-  var dots = document.getElementsByClassName('dot');
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
-}
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  },
+  false
+);
+
+let historyDisplayIndex = 1;
+const workHistoryButtons = document.querySelector('#work-history-buttons');
+
+const workHistoryButtonMore = document.querySelector(
+  '#work-history-button-more'
+);
+workHistoryButtonMore.addEventListener('click', () => {
+  const workHistoryCards = Array.from(
+    document.querySelectorAll('.work-history-card')
+  );
+
+  if (historyDisplayIndex >= workHistoryCards.length - 1) return;
+
+  historyDisplayIndex++;
+  workHistoryCards[historyDisplayIndex].hidden = false;
+
+  workHistoryButtons.scrollIntoView({
+    behavior: 'smooth',
+    block: 'end',
+  });
+});
+
+const workHistoryButtonLess = document.querySelector(
+  '#work-history-button-less'
+);
+workHistoryButtonLess.addEventListener('click', () => {
+  const workHistoryCards = Array.from(
+    document.querySelectorAll('.work-history-card')
+  );
+
+  if (historyDisplayIndex <= -1) return;
+
+  workHistoryCards[historyDisplayIndex].hidden = true;
+  historyDisplayIndex--;
+});

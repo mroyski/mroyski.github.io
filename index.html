@@ -3,114 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/6c420bad58.js"></script>
     <link
-      href="https://fonts.googleapis.com/css?family=Caveat|Montserrat&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Michael Royski</title>
   </head>
   <body>
-    <div id="head">
-      <h1>Michael Royski</h1>
-      <p>Full Stack Software Developer</p>
-      <hr />
-      <div id="social">
-        <a href="https://www.linkedin.com/in/michaelroyski/" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/mroyski" target="_blank"
-          ><i class="fab fa-github-square"></i
-        ></a>
-        <p id="email">mroyski@gmail.com</p>
-        <p id="phone">(216) 392-1882</p>
+    <h1 class="terminal-prompt">Michael Royski</h1>
+    <p>
+      I love writing code and learning new techniques to improve my skills. I am
+      always looking for great ideas and ways to contribute to teams who share
+      my passion. I started learning to code on my own in 2018 and graduated
+      from a coding bootcamp (We Can Code IT) in 2019. In my spare time I write
+      music, read, play arcade games, explore new places, and hang out with my
+      cats. Thank you for visiting my site!
+    </p>
+
+    <br />
+
+    <h3>Projects</h3>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p>
+            Pokemon Playground
+            <a href="https://github.com/mroyski/PokemonPlayground"
+              >View on Github</a
+            >
+          </p>
+          <p>React.js / Express</p>
+          <img class="swiper-slide-img" src="./images/pokemonplayground.png" />
+        </div>
+        <div class="swiper-slide">
+          <p>
+            Minimize
+            <a href="https://github.com/mroyski/Minimize">View on Github</a>
+          </p>
+          <p>React.js / ASP.NET Core</p>
+          <img class="swiper-slide-img" src="./images/minimize.png" />
+        </div>
+        <div class="swiper-slide">
+          <p>
+            Beerds Beer Review
+            <a href="https://github.com/mroyski/BeerdsBeerReview"
+              >View on Github</a
+            >
+          </p>
+          <p>ASP.NET Core</p>
+          <img class="swiper-slide-img" src="./images/beerdsbeerreview.png" />
+        </div>
+        <div class="swiper-slide">
+          <p>
+            Fasting Tracker
+            <a href="https://github.com/mroyski/Fasting">View on Github</a>
+          </p>
+          <p>ASP.NET Core</p>
+          <img class="swiper-slide-img" src="./images/fasting.png" />
+        </div>
+        <div class="swiper-slide">
+          <p>Other projects you can view on my Github!</p>
+          <p>
+            <a href="https://github.com/mroyski/Library"
+              >Library Management System</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/mroyski/CatAdoption"
+              >Cat Adoption</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/mroyski/advent-of-code-2022"
+              >Advent of Code 2022</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/mroyski/advent-of-code-2023"
+              >Advent of Code 2023</a
+            >
+          </p>
+        </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
     </div>
-    <div id="aboutMe">
-      <h1>About Me</h1>
-      <p>
-        I love writing code and learning new techniques to improve my skills. I
-        am always looking for great ideas and ways to contribute to teams who
-        share my passion. I started learning to code on my own in 2018 and
-        eventually graduated from a coding bootcamp (We Can Code IT) in 2019. In
-        my spare time I write music, read, play arcade games, explore new
-        places, and hang out with my cats. Thank you for visiting my site!
-      </p>
-      <img id="me" src="images/Royski.jpg" />
-    </div>
-    <div id="projAndSkills">
-      <div id="skills">
-        <h1>Skills</h1>
-        <div id="skillIcons">
-          .NET
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-react"></i>
-          <i class="fas fa-database"></i>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-git"></i>
+
+    <br />
+
+    <div class="work-history">
+      <h3>Employment History</h3>
+      <div class="terminal-timeline">
+        <div class="terminal-card work-history-card">
+          <header class="work-header">Checkr</header>
+          <div>
+            <p class="work-title">Software Engineer II</p>
+            <p>April 2022 - June 2024</p>
+            <p>
+              Delivered a delightful experience to background check candidates
+              by easing their process, effectively informing them of required
+              actions, and improving application reliability. Improve
+              communications to candidates via email and SMS, and distributed
+              custom surveys to candidates to gather sentiment around the
+              background check process.
+            </p>
+            <ul class="work-technologies">
+              <li>Ruby on Rails</li>
+              <li>React</li>
+              <li>SQL</li>
+            </ul>
+          </div>
         </div>
-        <ul id="skillsList">
-          <li>C#</li>
-          <li>ASP.Net Core</li>
-          <li>Javascript</li>
-          <li>React</li>
-          <li>SQL</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Source Control</li>
-          <li>Agile/Scrum</li>
-        </ul>
+        <div class="terminal-card work-history-card">
+          <header class="work-header">Inflection (Acquired by Checkr)</header>
+          <div>
+            <p class="work-title">Software Engineer</p>
+            <p>January 2022 - April 2022</p>
+            <p>
+              Contributed to the Customer Operations team to improve efficiency
+              and reduce customer contact. Made improvements to applications in
+              frontend and backend.
+            </p>
+            <ul class="work-technologies">
+              <li>.NET</li>
+              <li>Angular</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="terminal-card work-history-card">
+          <header class="work-header">Capgemini</header>
+          <div>
+            <p class="work-title">Software Engineer</p>
+            <p>August 2021 - December 2021</p>
+            <p>
+              Consultant for Financial Services and part of the Next Generation
+              Talent program. Member of the Microsoft Concentration Unit.
+            </p>
+            <ul class="work-technologies">
+              <li>.NET</li>
+              <li>Azure</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="terminal-card work-history-card">
+          <header class="work-header">Microsoft</header>
+          <div>
+            <p class="work-title">Software Engineer Contractor via Cognixia</p>
+            <p>March 2020 - June 2021</p>
+            <p>
+              Worked on the Skylight Data/Reporting team to accurately provide
+              telemetry from Microsoft support virtual agents to business
+              intelligence partners. Developed Azure infrastructure for services
+              such as Data Factory and Data Explorer. Used U-SQL and the Kusto
+              Query Language to analyze and validate data. Contributed to the
+              security compliance effort where I was responsible for
+              implementing static analysis pipelines for microservice
+              repositories and configuring least privilege access to the
+              production environment in Azure.
+            </p>
+            <ul class="work-technologies">
+              <li>.NET</li>
+              <li>Azure</li>
+              <li>SQL</li>
+              <li>KQL</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div id="projects">
-        <h1>Projects</h1>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <a href="http://github.com/mroyski/minimize" target="_blank"
-              ><img src="images/Minimize01.png" style="width:100%"
-            /></a>
-            <div class="text">
-              MINIMIZE<br />Learn the minimalist lifestlye and post your actions
-            </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <a
-              href="https://github.com/mroyski/BeerdsBeerReview"
-              target="_blank"
-              ><img src="images/Beerds01.png" style="width:100%"
-            /></a>
-            <div class="text">
-              BEERDS BEER REVIEW<br />Research beers and leave reviews
-            </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <a
-              href="https://github.com/ZachDickens/memegenerator"
-              target="_blank"
-              ><img src="images/Meme02.png" style="width:100%"
-            /></a>
-            <div class="text">MEME GENERATOR<br />Create your own memes</div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br />
-
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+      <div id="work-history-buttons">
+        <button id="work-history-button-more" class="btn btn-primary btn-ghost">
+          More
+        </button>
+        <button id="work-history-button-less" class="btn btn-error btn-ghost">
+          Less
+        </button>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
