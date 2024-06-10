@@ -9,22 +9,18 @@ document.addEventListener(
       .forEach((c) => (c.hidden = true));
 
     const swiper = new Swiper('.swiper', {
-      // Optional parameters
       direction: 'vertical',
       loop: true,
 
-      // If we need pagination
       pagination: {
         el: '.swiper-pagination',
       },
 
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
 
-      // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },
@@ -49,6 +45,11 @@ workHistoryButtonMore.addEventListener('click', () => {
   historyDisplayIndex++;
   workHistoryCards[historyDisplayIndex].hidden = false;
 
+  if (historyDisplayIndex === workHistoryCards.length - 1) {
+    const theEnd = document.querySelector('#work-history-end');
+    theEnd.hidden = false;
+  }
+
   workHistoryButtons.scrollIntoView({
     behavior: 'smooth',
     block: 'end',
@@ -67,4 +68,9 @@ workHistoryButtonLess.addEventListener('click', () => {
 
   workHistoryCards[historyDisplayIndex].hidden = true;
   historyDisplayIndex--;
+
+  if (historyDisplayIndex < workHistoryCards.length - 1) {
+    const theEnd = document.querySelector('#work-history-end');
+    theEnd.hidden = true;
+  }
 });
